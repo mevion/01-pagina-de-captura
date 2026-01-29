@@ -1,0 +1,51 @@
+.custom-select {
+    position: relative;
+    width: 100%;
+}
+
+.select-trigger {
+    width: 100%;
+    height: 56px;
+    background: #0b0b0b;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 0 16px;
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.select-trigger .placeholder {
+    color: #6b7280;
+}
+
+.arrow {
+    opacity: 0.6;
+}
+
+.select-options {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    /* ABRE PRA CIMA */
+    width: 100%;
+    background: #0e0e0e;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 6px;
+    z-index: 10;
+    list-style: none;
+}
+
+
+.select-options li {
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.select-options li:hover {
+    background: rgba(34, 197, 94, 0.15);
+}

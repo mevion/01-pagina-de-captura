@@ -1,0 +1,175 @@
+/* =========================
+   FUNDO DA PÁGINA
+========================= */
+.thankyou-bg {
+    min-height: 100vh;
+    background: url("/src/assets/img/bg-hero-ultra.webp") center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 40px 20px;
+}
+
+/* =========================
+   CARD CENTRAL
+========================= */
+.thankyou-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    width: 100%;
+    height: 420px;
+
+    background: rgba(15, 15, 15, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* =========================
+   IMAGEM ESQUERDA
+========================= */
+.thankyou-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =========================
+   CONTEÚDO DIREITA
+========================= */
+.thankyou-content {
+    padding: 48px 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.thankyou-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.thankyou-content p {
+    font-size: 15px;
+    color: #9ca3af;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+/* =========================
+   BOTÃO
+========================= */
+.thankyou-content button {
+    align-self: flex-start;
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 12px 22px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.thankyou-content button:hover {
+    background: #22c55e;
+    color: #05110a;
+    border-color: #22c55e;
+}
+
+/* =========================
+   REDES SOCIAIS
+========================= */
+.thankyou-social {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+}
+
+/* BOTÃO SOCIAL */
+.social-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.social-btn svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+    fill: currentColor;
+}
+
+.social-btn:hover {
+    background: #22c55e;
+    color: #05110a;
+    border-color: #22c55e;
+}
+
+.social-btn-youtube {
+    width: 42px;
+    height: 42px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+    text-decoration: none;
+    transition: 0.2s;
+    color: #fff;
+    /* o SVG usa fill="currentColor" */
+}
+
+.social-btn-youtube svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.social-btn-youtube:hover {
+    background: #22c55e;
+    border-color: #22c55e;
+    color: #05110a;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+@media (max-width: 768px) {
+    .thankyou-card {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .thankyou-media {
+        height: 220px;
+    }
+
+    .thankyou-content {
+        padding: 36px 28px;
+    }
+
+    .thankyou-content h1 {
+        font-size: 26px;
+    }
+}

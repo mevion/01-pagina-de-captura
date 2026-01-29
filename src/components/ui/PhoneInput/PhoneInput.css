@@ -1,0 +1,47 @@
+/* CONTAINER ÚNICO */
+.phone-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    background: #0b0b0b;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* PREFIXO (BANDEIRA + CÓDIGO) */
+.phone-prefix {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* mais espaço entre bandeira e +55 */
+    height: 100%;
+    padding: 0 20px;
+    /* MAIS RESPIRO lateral */
+    background: rgba(255, 255, 255, 0.03);
+    /* mais leve */
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+    font-size: 14px;
+    color: #e5e7eb;
+}
+
+/* INPUT */
+.phone-input {
+    flex: 1;
+    height: 100%;
+    padding: 0 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #fff;
+    padding-left: 18px;
+    /* distancia melhor do prefixo */
+}
+
+/* PLACEHOLDER */
+.phone-input::placeholder {
+    color: #6b7280;
+}
